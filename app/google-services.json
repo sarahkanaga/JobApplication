@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "711024793405",
+    "firebase_url": "https://house-help-jobs-e8996.firebaseio.com",
+    "project_id": "house-help-jobs-e8996",
+    "storage_bucket": "house-help-jobs-e8996.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711024793405:android:ef7ec047f2ee3a00",
+        "android_client_info": {
+          "package_name": "com.example.jobapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711024793405-25qrnsjlaqau1kt78g0et5pd1a3l39o6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobapplication",
+            "certificate_hash": "7aee448acbf45da207a64764a31e39049716bef2"
+          }
+        },
+        {
+          "client_id": "711024793405-s3skr79n2hrtr35a6bli8ns51drsr78l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0REirlGr-Upc-hc7rKQxGldCU76CfhLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711024793405-s3skr79n2hrtr35a6bli8ns51drsr78l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

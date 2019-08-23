@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Job Application</string>
+    <string name="show_dialog">show dialog</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="login_chat">login</string>
+</resources>

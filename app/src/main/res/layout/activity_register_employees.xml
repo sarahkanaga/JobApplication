@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterEmployeesActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/mypick"
+                        android:id="@+id/ci_image_id"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        />
+
+
+                    <Button
+                        android:id="@+id/btn_chooseImageId"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ci_image_id"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="choose image"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/btn_chooseImageId"
+                        android:layout_marginTop="2dp"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/lnLayout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+
+                                android:id="@+id/firstname_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/lnLayout_id"
+                                android:layout_marginStart="10dp"
+                                android:hint="First Name"/>
+
+                            <EditText
+                                android:id="@+id/secondname_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Second name"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/userName_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Create username"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/UserEmailaddress_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/mobilenumberLine1_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Mobile number"
+                                android:layout_marginStart="10dp"/>
+
+                            <EditText
+                                android:id="@+id/mobileNumberLine2_id"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Mobile number line 2 (optional)"
+                                android:layout_marginStart="10dp"/>
+                            <EditText
+                                android:id="@+id/userPassword"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Create password"
+                                android:layout_marginStart="10dp"/>
+                            <EditText
+                                android:id="@+id/userConfirmPassword"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Confirm password"
+                                android:layout_marginStart="10dp"/>
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkBox_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lnLayout_id"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lnLayout_id"
+                            android:layout_marginTop="25dp"
+                            android:layout_toRightOf="@id/checkBox_id"
+                            android:layout_marginStart="20dp"
+                            android:text="Accept Terms of use"
+                            android:textStyle="italic"/>
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/checkBox_id"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textColor="#fff"
+                            android:padding="3dp"
+                            android:text="SUBMIT"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
