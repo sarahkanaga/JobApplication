@@ -66,7 +66,7 @@ public class RegisterEmployeesActivity extends AppCompatActivity
         btnSubmit.setOnClickListener(new View.OnClickListener() {
 
 
-            Intent intentNext = new Intent(getApplicationContext(),communicationActivity.class);
+
 
             @Override
             public void onClick(View view)
@@ -85,26 +85,7 @@ public class RegisterEmployeesActivity extends AppCompatActivity
                     final String confirmPassword = confirmUserPassword.getText().toString();
 
 
-                    //*** setting a validation to ensure that the user doesn't leave any blank space
 
-                    /**if(firstName.isEmpty()
-                     ||secondName.isEmpty()||
-                     nameOfUser.isEmpty()||
-                     emailAdress.isEmpty()||
-                     phoneNumber1.isEmpty()
-                     || phoneNumber2.isEmpty()
-                     || password.isEmpty()
-                     || !password.equals(confirmPassword))
-                     {
-                     Toast.makeText(RegisterSellerActivity.this, "Please fill all fields",
-                     Toast.LENGTH_SHORT).show();
-                     } **/
-
-
-                    {
-                        Toast.makeText(RegisterEmployeesActivity.this, "Please fill all fields",
-                                Toast.LENGTH_SHORT).show();
-                    }
 
                 }
                 else
@@ -114,6 +95,11 @@ public class RegisterEmployeesActivity extends AppCompatActivity
                 }
             }
         });
+
+
+   }
+
+    private void nextMethod() {
     }
 
 

@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btHaveAccount;
     private Button btCreateAccount;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btHaveAccount = (Button)findViewById(R.id.btn_already_account_id);
+        btHaveAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent signInIntent = new Intent(getApplicationContext(),SigninActivity.class);
+                startActivity(signInIntent);
+            }
+        });
+
+
+
+
+
+
 
 
     }

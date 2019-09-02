@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sign_in_id"
+        android:text="Sign in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bt_employers_id"
+        android:text="employer"
+        android:layout_below="@id/tv_sign_in_id"
+        android:layout_marginTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bt_employees_id"
+        android:text="employee"
+        android:layout_below="@id/bt_employers_id"
+        android:layout_marginTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        />
+
+
+
+
+</RelativeLayout>

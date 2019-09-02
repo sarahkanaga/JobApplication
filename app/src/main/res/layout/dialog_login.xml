@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:paddingRight="300dp"
         android:inputType="textPassword"
-        android:hint="@string/email"
+        android:hint="@string/password"
         android:id="@+id/et_password_id"
         android:layout_marginTop="10dp"
 

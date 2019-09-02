@@ -62,6 +62,8 @@ public class RegisterEmployerActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                nextActivity();
+
                 if (myCheckBox.isChecked())
                 {
 
@@ -77,27 +79,6 @@ public class RegisterEmployerActivity extends AppCompatActivity
 
                     //*** setting a validation to ensure that the user doesn't leave any blank space
 
-
-
-                    /**if(firstName.isEmpty()
-                     ||secondName.isEmpty()||
-                     nameOfUser.isEmpty()||
-                     emailAdress.isEmpty()||
-                     phoneNumber1.isEmpty()
-                     || phoneNumber2.isEmpty()
-                     || password.isEmpty()
-                     || !password.equals(confirmPassword))
-                     {
-                     Toast.makeText(RegisterSellerActivity.this, "Please fill all fields",
-                     Toast.LENGTH_SHORT).show();
-                     } **/
-
-
-                     {
-                     Toast.makeText(RegisterEmployerActivity.this, "Please fill all fields",
-                     Toast.LENGTH_SHORT).show();
-                     }
-
                 }
                 else
                 {
@@ -111,7 +92,16 @@ public class RegisterEmployerActivity extends AppCompatActivity
         });
 
 
+
+
     }
+
+    public void nextActivity(){
+
+
+    }
+
+
     private void chooseImage()
     {
         Intent chooseImageIntent = new Intent();
@@ -145,7 +135,7 @@ public class RegisterEmployerActivity extends AppCompatActivity
 
 }
 
-    //**This method will determine whether the image is a png or a jpg
+
 
 
 
