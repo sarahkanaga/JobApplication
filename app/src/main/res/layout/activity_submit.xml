@@ -8,5 +8,72 @@
 
 
 
+    <TextView
+        android:id="@+id/tv_the_details_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FILL IN THE DETAILS!!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_the_details_id"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_type_of_jobs_id"
+        android:hint="Type of job likely to be done"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#000000"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_type_of_jobs_id"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_location_id"
+        android:hint="Location"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#000000"
+        />
+
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_location_id"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_describe_id"
+        android:hint="Describe the househepl"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_describe_id"
+        android:layout_marginTop="50dp"
+        android:text="log out"
+        android:id="@+id/bt_log_out_id"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"/>
+
+
+
 
 </RelativeLayout>
