@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    tools:context=".DetailsActivity"
+    android:background="@drawable/details">
 
 
     <EditText
@@ -14,7 +15,8 @@
         android:hint="User Name"
         android:textSize="30dp"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
 
 
 
@@ -27,6 +29,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginStart="30dp"
         android:layout_below="@id/et_user_name_id"
+        android:textStyle="bold"
 
         />
 
@@ -37,8 +40,14 @@
         android:id="@+id/bt_next_id"
         android:layout_below="@id/ed_password"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#005000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
         />
 
 </RelativeLayout>

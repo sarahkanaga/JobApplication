@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".logInActivity">
+    tools:context=".logInActivity"
+    android:background="@drawable/login"
+    >
 
     <TextView
         android:id="@+id/tv_loginas_id"
@@ -14,7 +16,9 @@
         android:layout_centerHorizontal="true"
         android:textSize="40dp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000"
+
 
         />
 
@@ -25,10 +29,14 @@
         android:text="employer"
         android:textSize="20dp"
        android:layout_below="@id/tv_loginas_id"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
-        android:paddingRight="50dp"
-        android:paddingLeft="50dp"/>
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:backgroundTint="#000080"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
 
 
 
@@ -39,10 +47,14 @@
         android:text="employee"
         android:textSize="20dp"
         android:layout_below="@id/btn_employer_id"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
-        android:paddingRight="50dp"
-        android:paddingLeft="50dp"/>
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:backgroundTint="#000080"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+       />
 
 
 

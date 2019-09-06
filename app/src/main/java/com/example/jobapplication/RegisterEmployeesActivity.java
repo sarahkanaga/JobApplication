@@ -23,6 +23,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RegisterEmployeesActivity extends AppCompatActivity
 {
+
   private Button btnChooseImage;
   private static final int PICK_IMAGE_REQUEST = 1;
   private static final int CHOOSE_IMAGE = 10;
@@ -95,6 +96,7 @@ public class RegisterEmployeesActivity extends AppCompatActivity
                 }
             }
         });
+
 
 
    }

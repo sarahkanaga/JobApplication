@@ -14,6 +14,9 @@ public class DetailsActivity extends AppCompatActivity {
     private EditText etPassword;
     private Button btNext;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,8 @@ public class DetailsActivity extends AppCompatActivity {
 
         etUserName = (EditText)findViewById(R.id.et_user_name_id);
         etPassword = (EditText)findViewById(R.id.et_password_id);
+
+
         btNext = (Button)findViewById(R.id.bt_next_id);
 
         btNext.setOnClickListener(new View.OnClickListener() {
@@ -30,5 +35,13 @@ public class DetailsActivity extends AppCompatActivity {
                 startActivity(nextIntent);
             }
         });
+
+
+
+
+
+
+
+
     }
 }
