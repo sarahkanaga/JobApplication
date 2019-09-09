@@ -12,7 +12,8 @@ public class DetailsActivity extends AppCompatActivity {
 
     private EditText etUserName;
     private EditText etPassword;
-    private Button btNext;
+   private Button btLogin;
+
 
 
 
@@ -24,17 +25,12 @@ public class DetailsActivity extends AppCompatActivity {
 
         etUserName = (EditText)findViewById(R.id.et_user_name_id);
         etPassword = (EditText)findViewById(R.id.et_password_id);
+        btLogin = (Button)findViewById(R.id.bt_login_id);
 
 
-        btNext = (Button)findViewById(R.id.bt_next_id);
 
-        btNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent nextIntent = new Intent(getApplicationContext(),SubmitActivity.class);
-                startActivity(nextIntent);
-            }
-        });
+
+
 
 
 

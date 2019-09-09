@@ -6,11 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -28,12 +32,17 @@ public class RegisterEmployerActivity extends AppCompatActivity
             userEmailAdress, userPhoneNumber1, userPhoneNumber2,
             userPassword, confirmUserPassword;
 
+            DatabaseReference databaseReference;
+            FirebaseDatabase firebaseDatabase;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_employer);
+
+
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
 
 
@@ -60,21 +69,13 @@ public class RegisterEmployerActivity extends AppCompatActivity
         btnSubmit = (Button)findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                nextActivity();
+            public void onClick(View view){
+
+
 
                 if (myCheckBox.isChecked())
                 {
 
-                    final  String firstName = userFirstName.getText().toString();
-                    final  String secondName = userSecondName.getText().toString();
-                    final String nameOfUser = userName.getText().toString();
-                    final String emailAdress = userEmailAdress.getText().toString();
-                    final String phoneNumber1 = userPhoneNumber1.getText().toString();
-                    final String phoneNumber2 = userPhoneNumber2.getText().toString();
-                    final String password = userPassword.getText().toString();
-                    final String confirmPassword = confirmUserPassword.getText().toString();
 
 
                     //*** setting a validation to ensure that the user doesn't leave any blank space
@@ -89,17 +90,42 @@ public class RegisterEmployerActivity extends AppCompatActivity
 
 
                 }
-        });
+        }) ; next();
 
 
 
 
     }
+    public void next(){
 
-    public void nextActivity(){
+        final  String firstName = userFirstName.getText().toString();
+        final  String secondName = userSecondName.getText().toString();
+        final String nameOfUser = userName.getText().toString();
+        final String emailAdress = userEmailAdress.getText().toString();
+
+
+
+        if (!TextUtils.isEmpty(firstName) && !TextUtils.isEmpty(secondName)){
+
+            String id = databaseReference.push().getKey();
+
+            Help help = new Help(id,userFirstName,userSecondName,userName,emailAdress);
+            databaseReference.child(id).setValue(help);
+            userFirstName.setText("");
+            userSecondName.setText("");
+            userName.setText("");
+            userEmailAdress.setText("");
+
+        }
+
+
+
+        else
+            Toast.makeText(this, "first name and second name cannot be empty", Toast.LENGTH_SHORT).show();
 
 
     }
+
 
 
     private void chooseImage()

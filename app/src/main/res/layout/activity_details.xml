@@ -36,8 +36,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="next"
-        android:id="@+id/bt_next_id"
+        android:text="sign in"
+        android:id="@+id/bt_sign_in_id"
         android:layout_below="@id/ed_password"
         android:layout_centerHorizontal="true"
         android:paddingLeft="100dp"
