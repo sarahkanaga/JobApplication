@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginIntent = new Intent(getApplicationContext(),logInActivity.class);
+                Intent loginIntent = new Intent(getApplicationContext(),SigninActivity.class);
 
                 startActivity(loginIntent);
 

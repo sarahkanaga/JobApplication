@@ -42,7 +42,7 @@ public class RegisterEmployerActivity extends AppCompatActivity
         setContentView(R.layout.activity_register_employer);
 
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference("job");
 
 
 
@@ -109,7 +109,8 @@ public class RegisterEmployerActivity extends AppCompatActivity
 
             String id = databaseReference.push().getKey();
 
-            Help help = new Help(id,userFirstName,userSecondName,userName,emailAdress);
+            Help help = new Help(id,userFirstName,userSecondName,userName,
+                    emailAdress);
             databaseReference.child(id).setValue(help);
             userFirstName.setText("");
             userSecondName.setText("");

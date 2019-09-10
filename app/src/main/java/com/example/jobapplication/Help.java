@@ -12,7 +12,6 @@ public class Help {
     public Help(String id, EditText userFirstName, EditText userSecondName, EditText userName, String emailAdress) {
     }
 
-
     public Help(String firstName, String secondName, String userName, String email) {
         this.firstName = firstName;
         this.secondName = secondName;

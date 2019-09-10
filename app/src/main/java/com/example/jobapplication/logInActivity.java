@@ -28,7 +28,7 @@ public class logInActivity extends AppCompatActivity {
         btEmployer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent employerIntent = new Intent(logInActivity.this, SubmitActivity.class);
+                Intent employerIntent = new Intent(logInActivity.this, RegisterEmployerActivity.class);
                 startActivity(employerIntent);
             }
         });
